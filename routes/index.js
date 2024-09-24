@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Welcome to Cloud Computing' });
 });
-// router.get('/admin', function(req, res, next) {
-//   res.render('admin', { title: 'Welcome to Admin page' });
-// });
+router.get('/login', function(req, res, next) {
+  res.render('login', { title: 'Welcome to Login page' });
+});
 module.exports = router;
