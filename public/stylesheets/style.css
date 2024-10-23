@@ -1,8 +1,43 @@
+/* Đặt phông chữ chung cho toàn bộ trang */
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Màu nền nhẹ */
+  color: #333; /* Màu chữ chính */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Để sắp xếp theo cột */
 }
 
+/* Phong cách cho tiêu đề */
+h1 {
+  color: #2c3e50; /* Màu xanh đậm */
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+/* Đoạn văn bản */
+p {
+  font-size: 1.2em;
+  color: #34495e; /* Màu chữ xám xanh */
+  margin-bottom: 30px;
+}
+
+/* Phong cách cho liên kết */
 a {
-  color: #00B7FF;
+  text-decoration: none;
+  background-color: #3498db; /* Màu xanh dương */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng khi hover vào liên kết */
+a:hover {
+  background-color: #2980b9; /* Màu xanh đậm khi hover */
 }
