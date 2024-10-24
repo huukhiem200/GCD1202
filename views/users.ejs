@@ -1,14 +1,83 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
     <meta http-equiv="refresh" content="30">
-  </head>
-  <body>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Modern font */
+            background-color: #121212; /* Dark background */
+            color: #e0e0e0; /* Light gray text */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3.5em; /* Larger title */
+            color: #bb86fc; /* Purple color for title */
+            margin-top: 30px;
+            letter-spacing: 4px;
+        }
+        p {
+            font-size: 1.5em; /* Larger paragraph text */
+            color: #b0bec5; /* Light blue-gray for paragraph */
+            margin: 15px 0 40px;
+        }
+        table {
+            width: 95%; /* Slightly wider table */
+            max-width: 1200px; /* Increased max width */
+            margin: 30px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 20px; /* Increased padding */
+            text-align: left;
+            border-bottom: 2px solid #424242; /* Darker border */
+            transition: background-color 0.3s ease;
+        }
+        th {
+            background-color: #3700b3; /* Dark purple for header */
+            color: white;
+            font-weight: bold; /* Bold header text */
+        }
+        td {
+            background-color: #1e1e1e; /* Dark background for cells */
+            color: #e0e0e0; /* Light text for cells */
+        }
+        tr:hover td {
+            background-color: #424242; /* Dark hover effect */
+        }
+        a {
+            display: inline-block;
+            margin: 30px auto;
+            padding: 15px 35px; /* Larger button */
+            background-color: #ff4081; /* Pink button color */
+            color: white;
+            text-decoration: none;
+            border-radius: 50px; /* More rounded button */
+            font-size: 1.2em; /* Larger font size */
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        a:hover {
+            background-color: #f50057; /* Darker pink on hover */
+            transform: scale(1.1); /* Slightly larger on hover */
+        }
+    </style>
+</head>
+<body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <!-- Products table -->
     <%- products_table %>
+
     <a href="/logout">Logout</a>
-  </body>
+</body>
 </html>

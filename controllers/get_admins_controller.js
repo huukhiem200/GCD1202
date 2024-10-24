@@ -1,6 +1,6 @@
 const pool = require("../models/pg_connector")
 async function display_admin_page(req, res) {
-    if (req.session.authented && req.session.role_id <= 2) {
+    if (req.session.authented && req.session.role_id <= 1) {
         let shop_id = 1;
         if (req.body.shops){
             shop_id = parseInt(req.body.shops);

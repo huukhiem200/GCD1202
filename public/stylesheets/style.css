@@ -1,43 +1,109 @@
-/* Đặt phông chữ chung cho toàn bộ trang */
+/* Global Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0; /* Màu nền nhẹ */
-  color: #333; /* Màu chữ chính */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light gray text */
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  flex-direction: column; /* Để sắp xếp theo cột */
+  height: 100vh; /* Full viewport height */
+  flex-direction: column; /* Column layout */
 }
 
-/* Phong cách cho tiêu đề */
+/* Header Styles */
 h1 {
-  color: #2c3e50; /* Màu xanh đậm */
-  font-size: 3em;
+  color: #bb86fc; /* Bright purple for title */
+  font-size: 3.5em; /* Larger font size */
   margin-bottom: 20px;
+  letter-spacing: 2px; /* Spacing between letters */
 }
 
-/* Đoạn văn bản */
+/* Paragraph Styles */
 p {
-  font-size: 1.2em;
-  color: #34495e; /* Màu chữ xám xanh */
+  font-size: 1.5em; /* Larger paragraph text */
+  color: #b0bec5; /* Light blue-gray for paragraph */
   margin-bottom: 30px;
+  text-align: center; /* Centered text */
 }
 
-/* Phong cách cho liên kết */
+/* Link Styles */
 a {
   text-decoration: none;
-  background-color: #3498db; /* Màu xanh dương */
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 1em;
-  transition: background-color 0.3s ease;
+  background-color: #ff4081; /* Bright pink background */
+  color: white; /* White text */
+  padding: 15px 30px; /* Larger padding for button */
+  border-radius: 50px; /* More rounded button */
+  font-size: 1.2em; /* Larger font size */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
-/* Hiệu ứng khi hover vào liên kết */
+/* Hover Effect for Links */
 a:hover {
-  background-color: #2980b9; /* Màu xanh đậm khi hover */
+  background-color: #f50057; /* Darker pink on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+/* Dropdown Styles */
+.dropdown {
+  margin: 30px 0;
+  text-align: center; /* Centered dropdown */
+}
+
+label {
+  font-size: 1.2em; /* Larger label text */
+  color: #e0e0e0; /* Light text color */
+  margin-right: 10px; /* Space between label and dropdown */
+}
+
+select {
+  padding: 12px;
+  font-size: 1em;
+  border: 2px solid #bb86fc; /* Purple border */
+  border-radius: 30px; /* Rounded corners */
+  width: 240px; /* Increased width */
+  background-color: #282828; /* Dark background for select */
+  color: #e0e0e0; /* Light text color */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect for Select */
+select:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Light shadow on hover */
+  border-color: #ff4081; /* Pink border on hover */
+}
+
+/* Table Styles */
+table {
+  width: 95%; /* Slightly wider table */
+  max-width: 1200px; /* Increased max width */
+  margin: 30px auto; /* Centered table */
+  border-collapse: collapse; /* Collapse borders */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Deeper shadow */
+  border-radius: 12px; /* Rounded corners */
+  overflow: hidden; /* Hide overflow */
+}
+
+th, td {
+  padding: 20px; /* Increased padding */
+  text-align: left; /* Left-aligned text */
+  border-bottom: 2px solid #424242; /* Darker border */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+th {
+  background-color: #3700b3; /* Dark purple for header */
+  color: white; /* White text */
+  font-size: 1.2em; /* Larger header text */
+}
+
+td {
+  background-color: #1e1e1e; /* Dark background for cells */
+  color: #e0e0e0; /* Light text for cells */
+}
+
+/* Hover Effect for Table Rows */
+tr:hover td {
+  background-color: #424242; /* Dark hover effect */
 }
